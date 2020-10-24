@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>WEB FORM</title>
+        <script LANGUAGE="JavaScript" type="text/javascript">
+            function display() {
+              DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+              message = "<ul><li><b>FIRSTNAME: </b>" + document.form1.firstname.value;
+                message += "<li><b>LASTNAME: </b>" + document.form1.lastname.value;
+              message += "<li><b>ADDRESS: </b>" + document.form1.address.value;
+              message += "<li><b>PHONE: </b>" + document.form1.phone.value + "</ul>";
+              message += "<li><b>EMAIL: </b>" + document.form1.email.value;
+              message += "<li><b>GENDER: </b>" + document.form1.gender.value;
+                message += "<li><b>HOBBIES: </b>" + document.form1.hobbies.value;
+                    message += "<li><b>DOB: </b>" + document.form1.dob.value;  
+                        message += "<li><b>STATE: </b>" + document.form1.state.value;
+              DispWin.document.write(message);
+            }
+            </script>
+        
+    </head>
+    <body>
+        <center> <caption><b> WEB FORM</b></caption></center><br/>
+        <form NAME="form1" action="">
+            <table border=1  align="center" width="80%" height="100%" bgcolor="pink" >
+            
+            <tr>   
+                <th>Enter your first name</th>
+                <td><input type="text"  maxlength="10" name="firstname"   required/></td>
+            </tr>
+            <tr>
+                <th>Enter your last name</th>
+                <td><input type="text" name="lastname"/></td>
+            </tr>
+            
+            <tr>
+                <th>Enter your email</th>
+                <td><input type="email" name="email"/></td>
+            </tr>
+            <tr>
+                <th>Enter your mobile</th>
+                <td><input type="number" name="phone"/></td>
+            </tr>
+            <tr>
+                <th>Enter your address</th>
+                <td><textarea rows="20" cols="40" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <th>Select your gender</th>
+                <td >
+                    male<input type="radio" name="g" value="m" name="gender"/>
+                    female<input type="radio" name="g" value="f" name="gender"/>
+                </td>
+            </tr>
+            <tr>
+                    <th>Enter your Hobbies</th>
+                    <td>
+                        Singing<input type="checkbox" name="x[]" value="h" name="hobbies"/>
+                        Dancing<input type="checkbox" name="x[]" value="h2" name="hobbies"/>
+                        Painting<input type="checkbox" name="x[]" value="h3" name="hobbies"/>
+                        Other<input type="checkbox" name="x[]" value="h4" name="hobbies"/>
+                    </td>
+                        
+                    
+            </tr>
+            <tr>
+                    <th>Select your DOB</th>
+                    <td><input type="date" name="dob"/></td>
+            </tr>
+            <tr>
+                    <th>Select your State</th>
+                    <td>
+                            <select name="State" name="state">
+                                    <option value="" selected="selected" disabled="disabled">Select your State</option>
+                                    <option value="1">AP</option>
+                                    <option value="2">Telangana</option>
+                                    <option value="3">Karnataka</option>
+                                    <option value="4">ArunachalPradesh</option>
+                                    <option value="5">Bihar</option>
+                                    <option value="6">Gujarat</option>
+                                    <option value="7">Tamilnadu</option>
+                            </select>
+                    </td>
+            </tr>
+            
+            <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Save"/>
+                    <input type="reset" value="Reset"/>
+                    </td>
+            </tr>
+            </table>
+            <tr><td>  <input TYPE="BUTTON" VALUE="Display" onClick="display();"></td></tr>
+        </form>
+    </body>
+</html>

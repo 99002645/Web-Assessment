@@ -1,0 +1,9 @@
+[{"empId":1,"empName":"Nikhitha","empAddress":"Bangalore","empSalary":"78000"},
+ {"empId":2,"empName":"Nikhil","empAddress":"Chennai","empSalary":"53000"},
+ {"empId":3,"empName":"Nithin","empAddress":"Baroda","empSalary":"32000"},
+ {"empId":4,"empName":"Anuj","empAddress":"Hyderabad","empSalary":"89000"},
+ {"empId":5,"empName":"Adithya","empAddress":"Mumbai","empSalary":"51000"},
+ {"empId":6,"empName":"Naman","empAddress":"Vijaywada","empSalary":"72000"},
+ {"empId":7,"empName":"Sudarshana","empAddress":"Prakasam","empSalary":"90000"},
+ {"empId":8,"empName":"Shabana","empAddress":"Ananthapur","empSalary":"34000"}
+]
